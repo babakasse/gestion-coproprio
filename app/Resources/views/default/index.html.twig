@@ -1,4 +1,4 @@
-{# src/OC/CoreBundle/Resources/views/layout.html.twig #}
+{# app/Resources/views/layout.html.twig #}
 
 <!DOCTYPE html>
 <html>
@@ -75,8 +75,6 @@
 
     <div class="row">
         <div id="content" class="col-md-12">
-            {% block body %}
-            {% endblock %}
         </div>
     </div>
 
@@ -86,6 +84,11 @@
         <p class="text-center">KC-DEV © {{ 'now'|date('Y') }} ENTREPRISE.</p>
     </footer>
 </div>
+
+
+{% block body %}
+
+{% endblock %}
 
 {% block javascripts %}
     {# Ajoutez ces lignes JavaScript si vous comptez vous servir des fonctionnalités du bootstrap Twitter #}
