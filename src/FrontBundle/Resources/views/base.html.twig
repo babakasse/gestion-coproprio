@@ -43,21 +43,21 @@
             </form>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">Notifications</a></li>
-
+                {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Connecté en tant que <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Gerer mon compte</a></li>
-                        <li><a href="#">Mes méssages</a></li>
-                        <li><a href="#">Mes discussions</a></li>
-                        <li><a href="#">Vérsements</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Déconnexion</a></li>
-                    </ul>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Connecté en tant que {{ app.user.username }} <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Gerer mon compte</a></li>
+                            <li><a href="#">Mes méssages</a></li>
+                            <li><a href="#">Mes discussions</a></li>
+                            <li><a href="#">Vérsements</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li> <a href="{{ path('fos_user_security_logout') }}">Déconnexion</a></li>
+                        </ul>
                 </li>
-
-                <li><a href="#">Connexion</a></li>
-
+                {% else %}
+                    <li><a href="{{ path('fos_user_security_login') }}">Connexion</a></li>
+                {% endif %}
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -74,7 +74,6 @@
     <div class="row">
         <div id="content" class="col-md-12">
             {% block body %}
-                Back
             {% endblock %}
         </div>
     </div>
