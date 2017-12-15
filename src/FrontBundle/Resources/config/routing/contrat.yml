@@ -1,0 +1,24 @@
+contrat_index:
+    path:     /
+    defaults: { _controller: "FrontBundle:Contrat:index" }
+    methods:  GET
+
+contrat_show:
+    path:     /{id}/show
+    defaults: { _controller: "FrontBundle:Contrat:show" }
+    methods:  GET
+
+contrat_new:
+    path:     /new
+    defaults: { _controller: "FrontBundle:Contrat:new" }
+    methods:  [GET, POST]
+
+contrat_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "FrontBundle:Contrat:edit" }
+    methods:  [GET, POST]
+
+contrat_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "FrontBundle:Contrat:delete" }
+    methods:  DELETE

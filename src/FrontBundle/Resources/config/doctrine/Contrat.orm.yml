@@ -1,0 +1,23 @@
+FrontBundle\Entity\Contrat:
+    type: entity
+    table: null
+    repositoryClass: FrontBundle\Repository\ContratRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nom:
+            type: string
+            length: 255
+        dateSignature:
+            type: datetime
+            nullable: true
+            column: date_signature
+        dateFin:
+            type: datetime
+            nullable: true
+            column: date_fin
+    lifecycleCallbacks: {  }

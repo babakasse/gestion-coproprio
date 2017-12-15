@@ -1,0 +1,18 @@
+FrontBundle\Entity\Message:
+    type: entity
+    table: null
+    repositoryClass: FrontBundle\Repository\MessageRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        contenu:
+            type: string
+            length: 255
+        datePublication:
+            type: datetime
+            column: date_publication
+    lifecycleCallbacks: {  }

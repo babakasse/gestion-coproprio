@@ -1,0 +1,24 @@
+charge_index:
+    path:     /
+    defaults: { _controller: "FrontBundle:Charge:index" }
+    methods:  GET
+
+charge_show:
+    path:     /{id}/show
+    defaults: { _controller: "FrontBundle:Charge:show" }
+    methods:  GET
+
+charge_new:
+    path:     /new
+    defaults: { _controller: "FrontBundle:Charge:new" }
+    methods:  [GET, POST]
+
+charge_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "FrontBundle:Charge:edit" }
+    methods:  [GET, POST]
+
+charge_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "FrontBundle:Charge:delete" }
+    methods:  DELETE

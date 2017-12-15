@@ -1,0 +1,17 @@
+FrontBundle\Entity\Versement:
+    type: entity
+    table: null
+    repositoryClass: FrontBundle\Repository\VersementRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        montant:
+            type: integer
+        dateVersement:
+            type: datetime
+            column: date_versement
+    lifecycleCallbacks: {  }

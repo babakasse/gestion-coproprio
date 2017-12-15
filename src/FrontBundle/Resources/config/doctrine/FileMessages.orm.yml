@@ -1,0 +1,30 @@
+FrontBundle\Entity\FileMessages:
+    type: entity
+    table: null
+    repositoryClass: FrontBundle\Repository\FileMessagesRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        titre:
+            type: string
+            length: 255
+            unique: true
+        etat:
+            type: boolean
+        dateDebut:
+            type: datetime
+            column: date_debut
+        dateFin:
+            type: datetime
+            nullable: true
+            column: date_fin
+        idUser:
+            type: string
+            length: 255
+            nullable: true
+            column: id_user
+    lifecycleCallbacks: {  }

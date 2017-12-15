@@ -1,0 +1,35 @@
+FrontBundle\Entity\Charge:
+    type: entity
+    table: null
+    repositoryClass: FrontBundle\Repository\ChargeRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        titre:
+            type: string
+            length: 255
+            unique: true
+        montant:
+            type: integer
+        dateEcheance:
+            type: datetime
+            column: date_echeance
+        statut:
+            type: boolean
+        user:
+            type: array
+        urlFacture:
+            type: string
+            length: 255
+            nullable: true
+            column: url_facture
+        urlContrat:
+            type: string
+            length: 255
+            nullable: true
+            column: url_contrat
+    lifecycleCallbacks: {  }
