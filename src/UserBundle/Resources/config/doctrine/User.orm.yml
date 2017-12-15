@@ -8,3 +8,10 @@ UserBundle\Entity\User:
             id: true
             generator:
                 strategy: AUTO
+    fields:
+        telephone:
+            type: string
+            length: 255
+        adresse:
+            type: string
+            length: 255

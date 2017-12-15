@@ -17,4 +17,17 @@ class User extends BaseUser
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     protected $id;
+
+    /**
+     * @ORM\Column(name="telephone", type="integer")
+     * @ORM\Telephone
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    protected $telephone;
+
+    /**
+     * @ORM\Column(name="adresse", type="string")
+     * @ORM\Adresse
+     */
+    protected $adresse;
 }
