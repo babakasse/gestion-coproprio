@@ -11,16 +11,6 @@ app:
     type: annotation
 
 #kcdev
-charge:
-    resource: "@FrontBundle/Resources/config/routing/charge.yml"
-    prefix:   /charge
-
-#kcdev
-contrat:
-    resource: "@FrontBundle/Resources/config/routing/contrat.yml"
-    prefix:   /contrat
-
-#kcdev
 fos_user_security:
     resource: "@FOSUserBundle/Resources/config/routing/security.xml"
 

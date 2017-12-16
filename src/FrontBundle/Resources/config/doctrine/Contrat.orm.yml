@@ -20,4 +20,5 @@ FrontBundle\Entity\Contrat:
             type: datetime
             nullable: true
             column: date_fin
+
     lifecycleCallbacks: {  }

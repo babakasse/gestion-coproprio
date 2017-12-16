@@ -1,3 +1,28 @@
 front_homepage:
     path:     /front
     defaults: { _controller: FrontBundle:Default:index }
+
+#kcdev
+charge:
+    resource: "@FrontBundle/Resources/config/routing/charge.yml"
+    prefix:   /charge
+
+#kcdev
+contrat:
+    resource: "@FrontBundle/Resources/config/routing/contrat.yml"
+    prefix:   /contrat
+
+#kcdev
+message:
+    resource: "@FrontBundle/Resources/config/routing/message.yml"
+    prefix:   /message
+
+#kcdev
+filemessages:
+    resource: "@FrontBundle/Resources/config/routing/filemessages.yml"
+    prefix:   /filemessages
+
+#kcdev
+versement:
+    resource: "@FrontBundle/Resources/config/routing/versement.yml"
+    prefix:   /versement

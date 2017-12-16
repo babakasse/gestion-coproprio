@@ -32,4 +32,31 @@ FrontBundle\Entity\Charge:
             length: 255
             nullable: true
             column: url_contrat
+
+    oneToOne:
+        contrat:
+          targetEntity: FrontBundle\Entity\Contrat
+          joinColumn:
+            name: contrat_id
+            referencedColumnName: id
+            onDelete: CASCADE
+
+    oneToMany:
+        versements:
+          targetEntity: FrontBundle\Entity\Versement
+          mappedBy: charge
+          cascade: ["persist","merge"]
+
+    manyToMany:
+        users:
+          targetEntity: UserBundle\Entity\User
+          joinTable:
+             name: charges_users
+             joinColumns:
+               charge_id:
+                 referencedColumnName: id
+             inverseJoinColumns:
+               user_id:
+                 referencedColumnName: id
+
     lifecycleCallbacks: {  }

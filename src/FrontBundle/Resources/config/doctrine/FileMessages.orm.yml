@@ -27,4 +27,25 @@ FrontBundle\Entity\FileMessages:
             length: 255
             nullable: true
             column: id_user
+
+    oneToMany:
+        messages:
+          targetEntity: FrontBundle\Entity\Message
+          mappedBy: filemessage
+          cascade: ["persist", "merge"]
+
+
+    manyToMany:
+        users:
+          targetEntity: UserBundle\Entity\User
+          joinTable:
+             name: filemessages_users
+             joinColumns:
+               filemessages_id:
+                 referencedColumnName: id
+             inverseJoinColumns:
+               user_id:
+                 referencedColumnName: id
+
+
     lifecycleCallbacks: {  }

@@ -1,0 +1,24 @@
+message_index:
+    path:     /
+    defaults: { _controller: "FrontBundle:Message:index" }
+    methods:  GET
+
+message_show:
+    path:     /{id}/show
+    defaults: { _controller: "FrontBundle:Message:show" }
+    methods:  GET
+
+message_new:
+    path:     /new
+    defaults: { _controller: "FrontBundle:Message:new" }
+    methods:  [GET, POST]
+
+message_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "FrontBundle:Message:edit" }
+    methods:  [GET, POST]
+
+message_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "FrontBundle:Message:delete" }
+    methods:  DELETE

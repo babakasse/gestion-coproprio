@@ -1,0 +1,24 @@
+versement_index:
+    path:     /
+    defaults: { _controller: "FrontBundle:Versement:index" }
+    methods:  GET
+
+versement_show:
+    path:     /{id}/show
+    defaults: { _controller: "FrontBundle:Versement:show" }
+    methods:  GET
+
+versement_new:
+    path:     /new
+    defaults: { _controller: "FrontBundle:Versement:new" }
+    methods:  [GET, POST]
+
+versement_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "FrontBundle:Versement:edit" }
+    methods:  [GET, POST]
+
+versement_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "FrontBundle:Versement:delete" }
+    methods:  DELETE

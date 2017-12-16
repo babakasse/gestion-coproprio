@@ -14,4 +14,13 @@ FrontBundle\Entity\Versement:
         dateVersement:
             type: datetime
             column: date_versement
+
+    oneToOne:
+       user:
+         targetEntity: UserBundle\Entity\user
+         joinColumn:
+           name: user_id
+           referencedColumnName: id
+
+
     lifecycleCallbacks: {  }

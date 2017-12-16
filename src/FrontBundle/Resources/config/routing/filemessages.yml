@@ -1,0 +1,24 @@
+filemessages_index:
+    path:     /
+    defaults: { _controller: "FrontBundle:FileMessages:index" }
+    methods:  GET
+
+filemessages_show:
+    path:     /{id}/show
+    defaults: { _controller: "FrontBundle:FileMessages:show" }
+    methods:  GET
+
+filemessages_new:
+    path:     /new
+    defaults: { _controller: "FrontBundle:FileMessages:new" }
+    methods:  [GET, POST]
+
+filemessages_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "FrontBundle:FileMessages:edit" }
+    methods:  [GET, POST]
+
+filemessages_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "FrontBundle:FileMessages:delete" }
+    methods:  DELETE
