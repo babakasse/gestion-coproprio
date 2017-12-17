@@ -10,8 +10,14 @@ UserBundle\Entity\User:
                 strategy: AUTO
     fields:
         telephone:
-            type: string
-            length: 255
+            type: integer
+
         adresse:
             type: string
             length: 255
+
+oneToMany:
+    notifications:
+      targetEntity: FrontBundle\Entity\Notification
+      mappedBy: user
+      cascade: ["persist", "merge"]

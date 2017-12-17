@@ -1,0 +1,18 @@
+FrontBundle\Entity\Notification:
+    type: entity
+    table: null
+    repositoryClass: FrontBundle\Repository\NotificationRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        contenu:
+            type: string
+            length: 255
+        date:
+            type: datetime
+
+    lifecycleCallbacks: {  }

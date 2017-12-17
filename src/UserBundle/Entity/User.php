@@ -18,16 +18,63 @@ class User extends BaseUser
      */
     protected $id;
 
-    /**
-     * @ORM\Column(name="telephone", type="integer")
-     * @ORM\Telephone
-     * @ORM\GeneratedValue(strategy="AUTO")
-     */
-    protected $telephone;
 
     /**
-     * @ORM\Column(name="adresse", type="string")
-     * @ORM\Adresse
+     * @var int
      */
-    protected $adresse;
+    private $telephone;
+
+    /**
+     * @var string
+     */
+    private $adresse;
+
+
+    /**
+     * Set telephone
+     *
+     * @param integer $telephone
+     *
+     * @return User
+     */
+    public function setTelephone($telephone)
+    {
+        $this->telephone = $telephone;
+
+        return $this;
+    }
+
+    /**
+     * Get telephone
+     *
+     * @return integer
+     */
+    public function getTelephone()
+    {
+        return $this->telephone;
+    }
+
+    /**
+     * Set adresse
+     *
+     * @param string $adresse
+     *
+     * @return User
+     */
+    public function setAdresse($adresse)
+    {
+        $this->adresse = $adresse;
+
+        return $this;
+    }
+
+    /**
+     * Get adresse
+     *
+     * @return string
+     */
+    public function getAdresse()
+    {
+        return $this->adresse;
+    }
 }

@@ -1,0 +1,18 @@
+FrontBundle\Entity\Piecejointe:
+    type: entity
+    table: null
+    repositoryClass: FrontBundle\Repository\PiecejointeRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        url:
+            type: string
+            length: 255
+        alt:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

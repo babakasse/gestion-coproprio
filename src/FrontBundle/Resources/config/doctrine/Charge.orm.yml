@@ -41,6 +41,14 @@ FrontBundle\Entity\Charge:
             referencedColumnName: id
             onDelete: CASCADE
 
+    oneToOne:
+        piecejointe:
+          targetEntity: FrontBundle\Entity\Piecejointe
+          joinColumn:
+            name: piecejointe_id
+            referencedColumnName: id
+            onDelete: CASCADE
+
     oneToMany:
         versements:
           targetEntity: FrontBundle\Entity\Versement
