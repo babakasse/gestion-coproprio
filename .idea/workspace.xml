@@ -1,33 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49d875c9-05f1-4cd4-b899-fc1e59413e22" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FrontBundle/Command/ChargeCommand.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/FrontBundle/Entity/Piecejointe.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/FrontBundle/Resources/config/doctrine/Piecejointe.orm.yml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/console" afterPath="$PROJECT_DIR$/bin/console" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontBundle/Entity/Charge.php" afterPath="$PROJECT_DIR$/src/FrontBundle/Entity/Charge.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontBundle/Entity/Contrat.php" afterPath="$PROJECT_DIR$/src/FrontBundle/Entity/Contrat.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontBundle/Entity/FileMessages.php" afterPath="$PROJECT_DIR$/src/FrontBundle/Entity/FileMessages.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontBundle/Entity/Message.php" afterPath="$PROJECT_DIR$/src/FrontBundle/Entity/Message.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontBundle/Entity/Notification.php" afterPath="$PROJECT_DIR$/src/FrontBundle/Entity/Notification.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontBundle/Entity/Versement.php" afterPath="$PROJECT_DIR$/src/FrontBundle/Entity/Versement.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontBundle/Form/ChargeType.php" afterPath="$PROJECT_DIR$/src/FrontBundle/Form/ChargeType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontBundle/Repository/ChargeRepository.php" afterPath="$PROJECT_DIR$/src/FrontBundle/Repository/ChargeRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontBundle/Resources/config/doctrine/Charge.orm.yml" afterPath="$PROJECT_DIR$/src/FrontBundle/Resources/config/doctrine/Charge.orm.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontBundle/Resources/config/doctrine/Message.orm.yml" afterPath="$PROJECT_DIR$/src/FrontBundle/Resources/config/doctrine/Message.orm.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontBundle/Resources/config/doctrine/Versement.orm.yml" afterPath="$PROJECT_DIR$/src/FrontBundle/Resources/config/doctrine/Versement.orm.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/FrontBundle/Resources/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontBundle/Resources/views/Default/index.html.twig" afterPath="$PROJECT_DIR$/src/FrontBundle/Resources/views/Default/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontBundle/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/src/FrontBundle/Resources/views/base.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontBundle/Resources/views/charge/index.html.twig" afterPath="$PROJECT_DIR$/src/FrontBundle/Resources/views/charge/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontBundle/Resources/views/message/edit.html.twig" afterPath="$PROJECT_DIR$/src/FrontBundle/Resources/views/message/edit.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontBundle/Resources/views/message/show.html.twig" afterPath="$PROJECT_DIR$/src/FrontBundle/Resources/views/message/show.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UserBundle/Entity/User.php" afterPath="$PROJECT_DIR$/src/UserBundle/Entity/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UserBundle/Resources/config/doctrine/User.orm.yml" afterPath="$PROJECT_DIR$/src/UserBundle/Resources/config/doctrine/User.orm.yml" />
-    </list>
+    <list default="true" id="49d875c9-05f1-4cd4-b899-fc1e59413e22" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,21 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="45" lean-forward="false" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/default/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="80">
-              <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+              <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -87,11 +51,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Piecejointe.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FrontBundle/Entity/Piecejointe.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="20">
+              <caret line="73" column="13" lean-forward="false" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ChargeRepository.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FrontBundle/Repository/ChargeRepository.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="54">
-              <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+              <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -111,7 +85,7 @@
         <entry file="file://$PROJECT_DIR$/src/FrontBundle/Entity/Charge.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1822">
-              <caret line="5" column="55" lean-forward="true" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
+              <caret line="5" column="55" lean-forward="false" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
               <folding>
                 <element signature="e#38#70#0#PHP" expanded="true" />
               </folding>
@@ -123,7 +97,7 @@
         <entry file="file://$PROJECT_DIR$/bin/console">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="74">
-              <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+              <caret line="13" column="18" lean-forward="false" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
               <folding>
                 <element signature="e#26#81#0#PHP" expanded="true" />
               </folding>
@@ -145,7 +119,7 @@
         <entry file="file://$PROJECT_DIR$/src/FrontBundle/Controller/ChargeController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="26" column="11" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="26" selection-end-column="11" />
+              <caret line="26" column="11" lean-forward="false" selection-start-line="20" selection-start-column="7" selection-end-line="26" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -212,7 +186,6 @@
         <option value="$PROJECT_DIR$/src/FrontBundle/Entity/Pjointe.php" />
         <option value="$PROJECT_DIR$/src/FrontBundle/Form/ChargeType.php" />
         <option value="$PROJECT_DIR$/src/FrontBundle/Resources/config/doctrine/Piecejointe.orm.yml" />
-        <option value="$PROJECT_DIR$/src/FrontBundle/Entity/Piecejointe.php" />
         <option value="$PROJECT_DIR$/src/FrontBundle/Entity/Versement.php" />
         <option value="$PROJECT_DIR$/src/FrontBundle/Entity/FileMessages.php" />
         <option value="$PROJECT_DIR$/src/FrontBundle/Resources/config/doctrine/Message.orm.yml" />
@@ -231,6 +204,7 @@
         <option value="$PROJECT_DIR$/bin/console" />
         <option value="$PROJECT_DIR$/src/FrontBundle/Repository/ChargeRepository.php" />
         <option value="$PROJECT_DIR$/src/FrontBundle/Command/ChargeCommand.php" />
+        <option value="$PROJECT_DIR$/src/FrontBundle/Entity/Piecejointe.php" />
       </list>
     </option>
   </component>
@@ -632,12 +606,12 @@
       <workItem from="1512738813093" duration="5378000" />
       <workItem from="1513241456410" duration="13525000" />
       <workItem from="1513262281565" duration="46054000" />
-      <workItem from="1513512156181" duration="33981000" />
+      <workItem from="1513512156181" duration="34572000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110466000" />
+    <option name="totallyTimeSpent" value="111057000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -784,16 +758,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FrontBundle/Entity/Piecejointe.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1200">
-          <caret line="73" column="13" lean-forward="false" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="13" />
-          <folding>
-            <element signature="e#38#70#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/FrontBundle/Form/PiecejointeType.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -937,7 +901,7 @@
         <state relative-caret-position="380">
           <caret line="19" column="13" lean-forward="false" selection-start-line="15" selection-start-column="6" selection-end-line="19" selection-end-column="13" />
           <folding>
-            <marker date="1513631856607" expanded="true" signature="350:565" ph="{% if is_granted('ROLE_ADMIN') ...%}" />
+            <marker date="1513720876989" expanded="true" signature="350:565" ph="{% if is_granted('ROLE_ADMIN') ...%}" />
           </folding>
         </state>
       </provider>
@@ -1003,7 +967,7 @@
         <state relative-caret-position="80">
           <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
           <folding>
-            <marker date="1513706151107" expanded="true" signature="46:161" ph="{% block body ...%}" />
+            <marker date="1513720876880" expanded="true" signature="46:161" ph="{% block body ...%}" />
           </folding>
         </state>
       </provider>
@@ -1019,7 +983,7 @@
     <entry file="file://$PROJECT_DIR$/app/Resources/views/default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
-          <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+          <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -1043,7 +1007,7 @@
     <entry file="file://$PROJECT_DIR$/bin/console">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="74">
-          <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+          <caret line="13" column="18" lean-forward="false" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
           <folding>
             <element signature="e#26#81#0#PHP" expanded="true" />
           </folding>
@@ -1061,7 +1025,7 @@
     <entry file="file://$PROJECT_DIR$/src/FrontBundle/Entity/Charge.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1822">
-          <caret line="5" column="55" lean-forward="true" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
+          <caret line="5" column="55" lean-forward="false" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
           <folding>
             <element signature="e#38#70#0#PHP" expanded="true" />
           </folding>
@@ -1071,7 +1035,7 @@
     <entry file="file://$PROJECT_DIR$/src/FrontBundle/Controller/ChargeController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="26" column="11" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="26" selection-end-column="11" />
+          <caret line="26" column="11" lean-forward="false" selection-start-line="20" selection-start-column="7" selection-end-line="26" selection-end-column="11" />
           <folding />
         </state>
       </provider>
@@ -1087,7 +1051,15 @@
     <entry file="file://$PROJECT_DIR$/src/FrontBundle/Repository/ChargeRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FrontBundle/Entity/Piecejointe.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="73" column="13" lean-forward="false" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="13" />
           <folding />
         </state>
       </provider>
