@@ -16,11 +16,16 @@ FrontBundle\Entity\Message:
             type: datetime
             column: date_publication
 
-    oneToOne:
-        user:
-          targetEntity: UserBundle\Entity\User
-          joinColumn:
-            name: user_id
-            referencedColumnName: id
+    manyToOne:
+          user:
+            targetEntity: UserBundle\Entity\User
+            joinCulum:
+              nullable: false
+            inversedBy: messages
+          filemessage:
+            targetEntity: FrontBundle\Entity\FileMessages
+            joinCulum:
+              nullable: false
+            inversedBy: messages
 
     lifecycleCallbacks: {  }

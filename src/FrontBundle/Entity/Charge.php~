@@ -2,6 +2,9 @@
 
 namespace FrontBundle\Entity;
 
+use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\HttpFoundation\File\UploadedFile;
+
 /**
  * Charge
  */
@@ -36,16 +39,6 @@ class Charge
      * @var array
      */
     private $user;
-
-    /**
-     * @var string
-     */
-    private $urlFacture;
-
-    /**
-     * @var string
-     */
-    private $urlContrat;
 
     /**
      * @var \FrontBundle\Entity\Contrat
@@ -184,55 +177,6 @@ class Charge
     }
 
     /**
-     * Set urlFacture
-     *
-     * @param string $urlFacture
-     *
-     * @return Charge
-     */
-    public function setUrlFacture($urlFacture)
-    {
-        $this->urlFacture = $urlFacture;
-
-        return $this;
-    }
-
-    /**
-     * Get urlFacture
-     *
-     * @return string
-     */
-    public function getUrlFacture()
-    {
-        return $this->urlFacture;
-    }
-
-    /**
-     * Set urlContrat
-     *
-     * @param string $urlContrat
-     *
-     * @return Charge
-     */
-    public function setUrlContrat($urlContrat)
-    {
-        $this->urlContrat = $urlContrat;
-
-        return $this;
-    }
-
-    /**
-     * Get urlContrat
-     *
-     * @return string
-     */
-    public function getUrlContrat()
-    {
-        return $this->urlContrat;
-    }
-
-
-    /**
      * Set contrat
      *
      * @param \FrontBundle\Entity\Contrat $contrat
@@ -279,6 +223,9 @@ class Charge
     {
         $this->versements[] = $versement;
 
+            //Je lie le versement à la charge
+            $versement->setCharge($this);
+
         return $this;
     }
 
@@ -323,8 +270,7 @@ class Charge
 
     /**
      * Remove user
-     *
-     * @param \UserBundle\Entity\User $user
+     *     * @param \UserBundle\Entity\User $user
      */
     public function removeUser(\UserBundle\Entity\User $user)
     {
@@ -339,5 +285,34 @@ class Charge
     public function getUsers()
     {
         return $this->users;
+    }
+
+    /**
+     * @var \FrontBundle\Entity\Piecejointe
+     */
+    private $piecejointe;
+
+    /**
+     * Set piecejointe
+     *
+     * @param \FrontBundle\Entity\Piecejointe $piecejointe
+     *
+     * @return Charge
+     */
+    public function setPiecejointe(\FrontBundle\Entity\Piecejointe $piecejointe = null)
+    {
+        $this->piecejointe = $piecejointe;
+
+        return $this;
+    }
+
+    /**
+     * Get piecejointe
+     *
+     * @return \FrontBundle\Entity\Piecejointe
+     */
+    public function getPiecejointe()
+    {
+        return $this->piecejointe;
     }
 }

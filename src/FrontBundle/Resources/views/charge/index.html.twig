@@ -12,8 +12,6 @@
                 <th>Dateecheance</th>
                 <th>Statut</th>
                 <th>User</th>
-                <th>Urlfacture</th>
-                <th>Urlcontrat</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -26,8 +24,6 @@
                 <td>{% if charge.dateEcheance %}{{ charge.dateEcheance|date('Y-m-d H:i:s') }}{% endif %}</td>
                 <td>{% if charge.statut %}Yes{% else %}No{% endif %}</td>
                 <td>{% if charge.user %}{{ charge.user|join(', ') }}{% endif %}</td>
-                <td>{{ charge.urlFacture }}</td>
-                <td>{{ charge.urlContrat }}</td>
                 <td>
                     <ul>
                         <li>

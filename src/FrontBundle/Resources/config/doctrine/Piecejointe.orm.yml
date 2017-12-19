@@ -9,10 +9,22 @@ FrontBundle\Entity\Piecejointe:
             generator:
                 strategy: AUTO
     fields:
+
         url:
             type: string
             length: 255
+            nullable: false
         alt:
             type: string
             length: 255
-    lifecycleCallbacks: {  }
+            nullable: true
+
+    lifecycleCallbacks:
+     prePersist: [ preUpload ]
+     preUpdate: [ preUpload ]
+     postPersist: [ upload ]
+     postUpdate: [ upload ]
+     preRemove: [ preRemoveUpload ]
+     postRemove: [ removeUpload ]
+
+

@@ -16,8 +16,29 @@ UserBundle\Entity\User:
             type: string
             length: 255
 
-oneToMany:
-    notifications:
-      targetEntity: FrontBundle\Entity\Notification
-      mappedBy: user
-      cascade: ["persist", "merge"]
+    manyToMany:
+      notifications:
+        targetEntity: FrontBundle\Entity\Notification
+        joinTable:
+          name: users_notifications
+          joinColumns:
+            user_id:
+              referencedColumnName: id
+          inverseJoinColumns:
+            notification_id:
+              referencedColumnName: id
+              unique: true
+
+
+    oneToMany:
+      versements:
+        targetEntity: FrontBundle\Entity\Versement
+        mappedBy: user
+        cascade: ["persist","merge"]
+      messages:
+        targetEntity: FrontBundle\Entity\Message
+        mappedBy: user
+        cascade: ["persist","merge"]
+
+
+

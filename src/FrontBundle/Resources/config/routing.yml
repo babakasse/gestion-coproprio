@@ -1,5 +1,5 @@
 front_homepage:
-    path:     /front
+    path:     /
     defaults: { _controller: FrontBundle:Default:index }
 
 #kcdev

@@ -109,4 +109,33 @@ class Versement
     {
         return $this->user;
     }
+    /**
+     * @var \FrontBundle\Entity\Charge
+     */
+    private $charge;
+
+
+    /**
+     * Set charge
+     *
+     * @param \FrontBundle\Entity\Charge $charge
+     *
+     * @return Versement
+     */
+    public function setCharge(\FrontBundle\Entity\Charge $charge = null)
+    {
+        $this->charge = $charge;
+
+        return $this;
+    }
+
+    /**
+     * Get charge
+     *
+     * @return \FrontBundle\Entity\Charge
+     */
+    public function getCharge()
+    {
+        return $this->charge;
+    }
 }

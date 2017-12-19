@@ -22,28 +22,18 @@ FrontBundle\Entity\Charge:
             type: boolean
         user:
             type: array
-        urlFacture:
-            type: string
-            length: 255
-            nullable: true
-            column: url_facture
-        urlContrat:
-            type: string
-            length: 255
-            nullable: true
-            column: url_contrat
 
     oneToOne:
         contrat:
           targetEntity: FrontBundle\Entity\Contrat
+          cascade: ["persist","remove"]
           joinColumn:
             name: contrat_id
             referencedColumnName: id
             onDelete: CASCADE
-
-    oneToOne:
         piecejointe:
           targetEntity: FrontBundle\Entity\Piecejointe
+          cascade: ["persist","remove"]
           joinColumn:
             name: piecejointe_id
             referencedColumnName: id
@@ -66,5 +56,7 @@ FrontBundle\Entity\Charge:
              inverseJoinColumns:
                user_id:
                  referencedColumnName: id
+
+
 
     lifecycleCallbacks: {  }

@@ -15,12 +15,22 @@ FrontBundle\Entity\Versement:
             type: datetime
             column: date_versement
 
-    oneToOne:
-       user:
-         targetEntity: UserBundle\Entity\user
-         joinColumn:
-           name: user_id
-           referencedColumnName: id
+    manyToOne:
+      charge:
+        targetEntity: FrontBundle\Entity\Charge
+        joinCulum:
+          nullable: false
+        inversedBy: versements
+      user:
+        targetEntity: UserBundle\Entity\User
+        joinCulum:
+          nullable: false
+        inversedBy: versements
+
+
+
+
+
 
 
     lifecycleCallbacks: {  }

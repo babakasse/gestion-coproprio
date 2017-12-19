@@ -218,7 +218,6 @@ class FileMessages
      */
     private $users;
 
-
     /**
      * Add user
      *

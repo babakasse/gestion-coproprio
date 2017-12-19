@@ -109,4 +109,33 @@ class Message
     {
         return $this->user;
     }
+    /**
+     * @var \FrontBundle\Entity\FileMessages
+     */
+    private $filemessage;
+
+
+    /**
+     * Set filemessage
+     *
+     * @param \FrontBundle\Entity\FileMessages $filemessage
+     *
+     * @return Message
+     */
+    public function setFilemessage(\FrontBundle\Entity\FileMessages $filemessage = null)
+    {
+        $this->filemessage = $filemessage;
+
+        return $this;
+    }
+
+    /**
+     * Get filemessage
+     *
+     * @return \FrontBundle\Entity\FileMessages
+     */
+    public function getFilemessage()
+    {
+        return $this->filemessage;
+    }
 }

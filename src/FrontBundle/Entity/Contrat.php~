@@ -110,4 +110,3 @@ class Contrat
         return $this->dateFin;
     }
 }
-

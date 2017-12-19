@@ -80,5 +80,62 @@ class Versement
     {
         return $this->dateVersement;
     }
-}
+    /**
+     * @var \UserBundle\Entity\user
+     */
+    private $user;
 
+
+    /**
+     * Set user
+     *
+     * @param \UserBundle\Entity\user $user
+     *
+     * @return Versement
+     */
+    public function setUser(\UserBundle\Entity\user $user = null)
+    {
+        $this->user = $user;
+
+        return $this;
+    }
+
+    /**
+     * Get user
+     *
+     * @return \UserBundle\Entity\user
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
+    /**
+     * @var \FrontBundle\Entity\Charge
+     */
+    private $charge;
+
+
+    /**
+     * Set charge
+     *
+     * @param \FrontBundle\Entity\Charge $charge
+     *
+     * @return Versement
+     */
+    public function setCharge(\FrontBundle\Entity\Charge $charge = null)
+    {
+        $this->charge = $charge;
+
+        return $this;
+    }
+
+    /**
+     * Get charge
+     *
+     * @return \FrontBundle\Entity\Charge
+     */
+    public function getCharge()
+    {
+        return $this->charge;
+    }
+}
