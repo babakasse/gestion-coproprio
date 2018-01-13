@@ -2,6 +2,7 @@
 
 namespace FrontBundle\Controller;
 
+use FOS\UserBundle\Model\UserInterface;
 use FrontBundle\Entity\Charge;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
@@ -31,9 +32,13 @@ class ChargeController extends Controller
      * Creates a new charge entity.
      *
      */
-    public function newAction(Request $request)
+    public function newAction(Request $request, UserInterface $user)
     {
         $charge = new Charge();
+        /** kcdev */
+        $userId = $user->getId();
+        $charge->setIdUser( $userId );
+        $charge->setUser($user);
         $form = $this->createForm('FrontBundle\Form\ChargeType', $charge);
         $form->handleRequest($request);
 

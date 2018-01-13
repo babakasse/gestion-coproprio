@@ -36,6 +36,9 @@ security:
     access_control: #kcdev
             - { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY}
             - { path: ^/charge, roles: ROLE_USER}
+            - { path: ^/filemessages, roles: ROLE_USER}
+            - { path: ^/projet, roles: ROLE_USER}
+            #- { path: ^/, roles: ROLE_USER}
             # activate different ways to authenticate
 
 

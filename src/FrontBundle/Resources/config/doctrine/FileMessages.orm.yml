@@ -23,7 +23,7 @@ FrontBundle\Entity\FileMessages:
             nullable: true
             column: date_fin
         idUser:
-            type: string
+            type: integer
             length: 255
             nullable: true
             column: id_user
@@ -46,6 +46,13 @@ FrontBundle\Entity\FileMessages:
              inverseJoinColumns:
                user_id:
                  referencedColumnName: id
+
+    manyToOne:
+       user:
+         targetEntity: UserBundle\Entity\User
+         joinCulum:
+           nullable: false
+         inversedBy: filemessages
 
 
     lifecycleCallbacks: {  }

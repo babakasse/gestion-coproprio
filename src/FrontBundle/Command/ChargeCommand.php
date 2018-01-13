@@ -8,6 +8,7 @@
 
 namespace FrontBundle\Command;
 
+use FrontBundle\Entity\Charge;
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
@@ -35,6 +36,13 @@ class ChargeCommand extends ContainerAwareCommand
 
             $text = 'Liste de tous les charges restant à payer :';
             $output->writeln($text);
+
+
+            $em = $this->doctrine->getManager();
+            $chargeRepo = $em->getRepository('FrontBundle:Charge');
+             $charge_restant=$chargeRepo->ChargeRestant();
+
+        $output->writeln($charge_restant);
 
     }
 }

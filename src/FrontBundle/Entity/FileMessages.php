@@ -33,7 +33,7 @@ class FileMessages
     private $dateFin;
 
     /**
-     * @var string
+     * @var integer
      */
     private $idUser;
 
@@ -147,7 +147,7 @@ class FileMessages
     /**
      * Set idUser
      *
-     * @param string $idUser
+     * @param integer $idUser
      *
      * @return FileMessages
      */
@@ -161,7 +161,7 @@ class FileMessages
     /**
      * Get idUser
      *
-     * @return string
+     * @return integer
      */
     public function getIdUser()
     {
@@ -250,5 +250,34 @@ class FileMessages
     public function getUsers()
     {
         return $this->users;
+    }
+    /**
+     * @var \UserBundle\Entity\User
+     */
+    private $user;
+
+
+    /**
+     * Set user
+     *
+     * @param \UserBundle\Entity\User $user
+     *
+     * @return FileMessages
+     */
+    public function setUser(\UserBundle\Entity\User $user = null)
+    {
+        $this->user = $user;
+
+        return $this;
+    }
+
+    /**
+     * Get user
+     *
+     * @return \UserBundle\Entity\User
+     */
+    public function getUser()
+    {
+        return $this->user;
     }
 }

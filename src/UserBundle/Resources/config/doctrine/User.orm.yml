@@ -11,10 +11,12 @@ UserBundle\Entity\User:
     fields:
         telephone:
             type: integer
+            nullable: true
 
         adresse:
             type: string
             length: 255
+            nullable: true
 
     manyToMany:
       notifications:
@@ -37,6 +39,10 @@ UserBundle\Entity\User:
         cascade: ["persist","merge"]
       messages:
         targetEntity: FrontBundle\Entity\Message
+        mappedBy: user
+        cascade: ["persist","merge"]
+      filemessages:
+        targetEntity: FrontBundle\Entity\FileMessages
         mappedBy: user
         cascade: ["persist","merge"]
 

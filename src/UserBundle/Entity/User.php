@@ -195,4 +195,43 @@ class User extends BaseUser
     {
         return $this->messages;
     }
+    /**
+     * @var \Doctrine\Common\Collections\Collection
+     */
+    private $filemessages;
+
+
+    /**
+     * Add filemessage
+     *
+     * @param \FrontBundle\Entity\FileMessages $filemessage
+     *
+     * @return User
+     */
+    public function addFilemessage(\FrontBundle\Entity\FileMessages $filemessage)
+    {
+        $this->filemessages[] = $filemessage;
+
+        return $this;
+    }
+
+    /**
+     * Remove filemessage
+     *
+     * @param \FrontBundle\Entity\FileMessages $filemessage
+     */
+    public function removeFilemessage(\FrontBundle\Entity\FileMessages $filemessage)
+    {
+        $this->filemessages->removeElement($filemessage);
+    }
+
+    /**
+     * Get filemessages
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getFilemessages()
+    {
+        return $this->filemessages;
+    }
 }

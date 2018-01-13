@@ -117,4 +117,121 @@ class User extends BaseUser
     {
         return $this->notifications;
     }
+    /**
+     * @var \Doctrine\Common\Collections\Collection
+     */
+    private $versements;
+
+    /**
+     * @var \Doctrine\Common\Collections\Collection
+     */
+    private $messages;
+
+
+    /**
+     * Add versement
+     *
+     * @param \FrontBundle\Entity\Versement $versement
+     *
+     * @return User
+     */
+    public function addVersement(\FrontBundle\Entity\Versement $versement)
+    {
+        $this->versements[] = $versement;
+
+        return $this;
+    }
+
+    /**
+     * Remove versement
+     *
+     * @param \FrontBundle\Entity\Versement $versement
+     */
+    public function removeVersement(\FrontBundle\Entity\Versement $versement)
+    {
+        $this->versements->removeElement($versement);
+    }
+
+    /**
+     * Get versements
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getVersements()
+    {
+        return $this->versements;
+    }
+
+    /**
+     * Add message
+     *
+     * @param \FrontBundle\Entity\Message $message
+     *
+     * @return User
+     */
+    public function addMessage(\FrontBundle\Entity\Message $message)
+    {
+        $this->messages[] = $message;
+
+        return $this;
+    }
+
+    /**
+     * Remove message
+     *
+     * @param \FrontBundle\Entity\Message $message
+     */
+    public function removeMessage(\FrontBundle\Entity\Message $message)
+    {
+        $this->messages->removeElement($message);
+    }
+
+    /**
+     * Get messages
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getMessages()
+    {
+        return $this->messages;
+    }
+    /**
+     * @var \Doctrine\Common\Collections\Collection
+     */
+    private $filemessages;
+
+
+    /**
+     * Add filemessage
+     *
+     * @param \FrontBundle\Entity\FileMessages $filemessage
+     *
+     * @return User
+     */
+    public function addFilemessage(\FrontBundle\Entity\FileMessages $filemessage)
+    {
+        $this->filemessages[] = $filemessage;
+
+        return $this;
+    }
+
+    /**
+     * Remove filemessage
+     *
+     * @param \FrontBundle\Entity\FileMessages $filemessage
+     */
+    public function removeFilemessage(\FrontBundle\Entity\FileMessages $filemessage)
+    {
+        $this->filemessages->removeElement($filemessage);
+    }
+
+    /**
+     * Get filemessages
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getFilemessages()
+    {
+        return $this->filemessages;
+    }
 }

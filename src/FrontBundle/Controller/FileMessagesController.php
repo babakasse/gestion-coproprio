@@ -5,6 +5,7 @@ namespace FrontBundle\Controller;
 use FrontBundle\Entity\FileMessages;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
  * Filemessage controller.
@@ -31,9 +32,13 @@ class FileMessagesController extends Controller
      * Creates a new fileMessage entity.
      *
      */
-    public function newAction(Request $request)
+    public function newAction(Request $request, UserInterface $user)
     {
         $fileMessage = new FileMessages();
+        /** kcdev */
+        $userId = $user->getId();
+        $fileMessage->setIdUser( $userId );
+        $fileMessage->setUser($user);
         $form = $this->createForm('FrontBundle\Form\FileMessagesType', $fileMessage);
         $form->handleRequest($request);
 

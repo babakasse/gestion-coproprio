@@ -35,7 +35,8 @@ class ChargeType extends AbstractType
             ->add('piecejointe', PiecejointeType::class)
             ->add('users', EntityType::class, array(
                 'class'         => 'UserBundle:User',
-                'multiple'      => true
+                'multiple'      => true,
+                'expanded'      =>true
             ));
 
         // On ajoute une fonction qui va écouter un évènement

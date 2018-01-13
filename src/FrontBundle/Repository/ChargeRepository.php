@@ -27,4 +27,13 @@ class ChargeRepository extends \Doctrine\ORM\EntityRepository
         // On retourne ces résultats
         return $results;
     }
+
+    public function ChargeRestant()
+    {
+        return $this->getEntityManager()
+            ->createQuery(
+                'SELECT ch FROM FrontBundle:Charge ch ORDER BY ch.id ASC'
+            )
+            ->getResult();
+    }
 }
